@@ -18,3 +18,17 @@ const useMemoCompare = (next, compare) => {
 }
 
 export default useMemoCompare
+
+/*
+
+How to use 
+
+const objFinal = useMemoCompare(obj, (prev, next) => {
+  return prev && prev.id === next.id
+})
+
+useEffect(() => {
+  // do something
+}, [objFinal])
+
+*/
